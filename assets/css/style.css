@@ -1,0 +1,346 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    background-image: url("../images/marbleBG.jpg");
+    background-color:#cccccc;
+    background-size: cover;
+}
+header {
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+    overflow-x: hidden;
+}
+.header {
+    width: 100%;
+    margin: 0 auto;
+}
+.header h1 {
+    margin-left: 18.5%;
+    display: block;
+    float: left;
+}
+nav {
+    margin-right: 19%;
+    float: right;
+    margin-top: 3%;
+}
+nav a {
+    color: #777777;
+    text-decoration: none;
+    font-size: 12pt;
+    padding: 18px 0px 18px 18px;
+    margin: 18px 0px 18px 18px;
+}
+nav a:hover {
+    border: 2px dashed #cccccc;
+    color: #4aaaa5;
+    padding: 10px;
+    margin: 10px;
+}
+nav a:active {
+    color: #777777;
+    font-size: 90%;
+    font-weight: bold;
+}
+.main {
+    width: 960px;
+    background: #ffffff;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1 {
+    background: #4aaaa5;
+    color: #ffffff;
+    padding: 30px;
+    width: fit-content;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+h2 {
+    color: #4aaaa5;
+    padding-top: 30px;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.portIcon {
+    float: left;
+    width: 34%;
+    padding: 5px;
+    position: relative;
+}
+#portIcons {
+    margin-left: 20px;
+}
+.portIcon p {
+    background: #4aaaa5;
+    width: 280px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+}
+.portIcon a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.portIcon p:hover {
+    background: rgb(74,170,165,.85);
+    letter-spacing: 3px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.portIcon p:active {
+    font-weight: bold;
+}
+.portIcon img {
+    height: 200px;
+    width: 280px;
+}
+#portIcons::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+.wrapper {
+    min-height: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 68px;
+}
+#aboutMe img {
+    float: left;
+    margin: 10px 30px 10px 30px;
+    border: 1px solid #4aaaa5;
+}
+#bio {
+    padding: 0 15px 10px 15px;
+    margin: 0 15px 10px 15px;
+    line-height: 200%;
+}
+form {
+    margin: 0 auto;
+    width: 900px;
+    height: 500px;
+    font-size: 14px;
+}
+.main hr {
+    width: 900px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #cccccc;
+}
+input, textarea {
+    width: 100%;
+    padding: 5px;
+}
+textarea {
+    height: 250px;
+}
+form div {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#submit {
+    width: 100px;
+    height: 40px;
+    background: #4aaaa5;
+    color: #ffffff;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+footer {
+    text-align: center;
+    color: #cccccc;
+    border-top: 8px solid #4aaaa5;
+    height: 50px;
+    font-size: 10px;
+    background: #666666;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 500;
+    padding-top: 35px;
+    margin-bottom: -35px;
+}
+@media only screen and (max-width: 980px) {
+    .header {
+        width: 927px;
+    }
+    .header h1 {
+        margin-left: 0;
+    }
+    nav {
+        margin-right: 0;
+        margin-top: 4%;
+    }
+    .main {
+        width: 65%;
+        display: inline-block;
+        margin-left: 3%;
+    }
+    h2 {
+        margin-top: 2%;
+        margin-left: 2%;
+        padding-top: 3%;
+        padding-left: 3%;
+    }
+    #aboutMe img {
+        margin-top: 1%;
+    }
+    #bio {
+        padding-bottom: 1%;
+        margin-bottom: 0;
+    }
+    .portIcon {
+        margin: 1% 6% 1% 1%;
+        padding: 1% 6% 1% 1%;
+    }
+    .portIcon img {
+        height: 200px;
+        width: 280px;
+    }
+    .portIcon p {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        bottom: 4px;
+        width: 280px;
+    }
+    #portIcons {
+        padding-bottom: 3%;
+    }
+    form {
+        width: 88%;
+        margin-left: 3%;
+        padding-left: 2%;
+        margin-right: 3%;
+        padding-right: 2%;
+    
+    }
+    #aboutMe, #contact, #portfolio {
+        height: 75%;
+    }
+    .main hr {
+        margin-top:20px;
+        margin-bottom: 20px;
+        width: 89.5%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .header, .main {
+        width: 100%;
+    }
+    .main {
+        margin-right: 2%;
+    }
+    nav {
+        margin-top: 5%;
+        padding-right: 2%;
+    }
+    .portIcon img {
+        margin: 1%;
+        padding-left: 1%;
+    }
+    .portIcon p {
+        bottom: 5%;
+        width: 91.5%;
+        margin-left: 1.65%;
+    }
+    form {
+        width: 88%;
+    }
+    #aboutMe, #contact, #portfolio {
+        height: 75%;
+    }
+    .main hr {
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    header {
+        position: static;
+        font-size: 60%;
+        padding: 0;
+    }
+    .header {
+        margin: 0;
+    }
+    .header h1 {
+        float: none;
+    }
+    h1 {
+        width: 100%;
+        margin: 0;
+        padding: 5%;
+        text-align: center;
+    }
+    nav {
+        float: none;
+        display: block;
+        text-align: center;
+        padding-top: 4%;
+        padding-bottom: 2%;
+        margin-bottom: 2%;
+        margin-top: 0;
+    }
+    .main {
+        width: 90%;
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-bottom: 15%;
+    }
+    #aboutMe img {
+        height: 90%;
+        width: 90%;
+        margin-left: 5%;
+        float: none;
+    }
+    .portIcon {
+        float: none;
+        display: block;
+    }
+    #portIcons {
+        margin-left: 0;
+    }
+    .portIcon img {
+        height: 265%;
+        width: 265%;
+        margin-left: 8%;
+    }
+    .portIcon p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 7.5%;
+        bottom: 5px;
+        width: 220%;
+    }
+    form {
+        width: 88%;
+        padding-left: 1%;
+    }
+    input {
+        margin-top: 1%;
+    }
+    #aboutMe, #contact, #portfolio {
+        height: 75%;
+    }
+    .main hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    footer {
+        position: static;
+    }
+}
