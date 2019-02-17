@@ -24,6 +24,10 @@ header {
     margin-left: 18.5%;
     display: block;
     float: left;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 8s;
+    animation-name: example;
+    animation-duration: 8s;
 }
 nav {
     margin-right: 19%;
@@ -174,6 +178,16 @@ footer {
     padding-top: 35px;
     margin-bottom: -35px;
 }
+/* Animation - changes Name BG color */
+@-webkit-keyframes example {
+    from {background-color: #4aaaa5;}
+    to {background-color: #777;}
+  }
+@keyframes example {
+    from {background-color: #4aaaa5;}
+    to {background-color: #777;}
+  }
+/*Media Queries*/
 @media only screen and (max-width: 980px) {
     .header {
         width: 927px;
