@@ -24,23 +24,23 @@
         <h2 id="portfolio">Portfolio</h2>
         <hr>
         <div id="portIcons">
-            <section class="portIcon">
+            <section id="wordGuess" class="portIcon">
                 <img src="assets/images/laptop.jpg" alt="Laptop">
                 <p><a href="https://rdougherty31.github.io/Word-Guess-Game/">Word Guess</a></p>
             </section>
-            <section class="portIcon">
+            <section id="crystalCollector" class="portIcon">
                 <img src="assets/images/guitar.jpg" alt="Guitar">
                 <p><a href="https://rdougherty31.github.io/unit-4-game/">RPG Game</a></p>
             </section>
-            <section class="portIcon">
+            <section id="triviaGame" class="portIcon">
                 <img src="assets/images/globe.jpg" alt="Globe">
                 <p><a href="https://rdougherty31.github.io/TriviaGame/">Trivia Game</a></p>
             </section>
-            <section class="portIcon">
+            <section id="rutgers" class="portIcon">
                 <img src="assets/images/phonewatch.jpg" alt="iPhone & Watch">
-                <p><a href="">Rutgers Info Widget</a></p>
+                <p><a href="https://rdougherty31.github.io/GifTastic/">GifTastic</a></p>
             </section>
-            <section class="portIcon">
+            <section onclick="comingSoon()" id="rockPaper" class="portIcon">
                 <img src="assets/images/rockpaperscissors.jpg" alt="Rock, Paper, Scissors">
                 <p><a href="">Rock Paper Scissors</a></p>
             </section>
@@ -50,6 +50,13 @@
 
 <footer>Copywright&#169;</footer>
 
+<script>
+function comingSoon() {
+    alert("Coming Soon!");
+}
+document.getElementById("#rutgers").on("click",comingSoon);
+document.getElementById("#rockPaper").on("click",comingSoon);
+</script>
 </body>
 
 </html>
